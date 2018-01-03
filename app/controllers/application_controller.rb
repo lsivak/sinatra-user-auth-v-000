@@ -20,7 +20,6 @@ class ApplicationController < Sinatra::Base
     puts params
     # @user = User.new(name: params["name"], email: params["email"], password: params["password"])
     # @user.save
-    User.create(name: params["name"], email: params["email"], password: params["password"])
     # redirect '/users/home'
     erb :'/users/home'
   end

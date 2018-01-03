@@ -14,10 +14,7 @@ class ApplicationController < Sinatra::Base
   get '/registrations/signup' do
     erb :'/registrations/signup'
   end
-    get '/users/home' do
 
-      erb :'/users/home'
-    end
 
   post '/registrations' do
     puts params

@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
     erb :'/registrations/signup'
   end
 
-  post '/registrations' do
+  post '/users/home' do
 
       @user = User.create(name: params["name"], email: params["email"], password: params["password"])
       @user.save
